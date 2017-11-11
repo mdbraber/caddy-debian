@@ -7,3 +7,7 @@ debian:
 .PHONY: cp
 cp:
 	cp $$GOPATH/src/github.com/mholt/caddy/caddy/caddy .
+
+.PHONY: clean
+clean:
+	dh_clean
