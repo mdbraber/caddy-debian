@@ -10,4 +10,5 @@ cp:
 
 .PHONY: clean
 clean:
+	rm -f caddy
 	dh_clean
