@@ -3,3 +3,7 @@
 .PHONY: debian
 debian:
 	dpkg-buildpackage -us -uc -b --target-arch amd64
+
+.PHONY: cp
+cp:
+	cp $$GOPATH/src/github.com/mholt/caddy/caddy/caddy .

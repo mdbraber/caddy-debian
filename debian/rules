@@ -1,6 +1,6 @@
 #!/usr/bin/make -f
 
-VERSION := 0.10.10 # we compile from Git so not really useful.
+VERSION := 0.10.10
 
 DEB_HOST_ARCH   := $(DEB_TARGET_ARCH)
 DISTRIBUTION    := $(shell lsb_release -sr)
