@@ -6,7 +6,7 @@ debian:
 
 .PHONY: cp
 cp:
-	cp $$GOPATH/src/github.com/mholt/caddy/caddy/caddy .
+	cp /usr/bin/caddy .
 
 .PHONY: clean
 clean:

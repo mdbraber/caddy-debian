@@ -8,7 +8,9 @@ case "$1" in
             adduser --system --disabled-password --disabled-login --home /var/www-data \
                     --quiet --force-badname --group www-data
         fi
-        ;;
+
+	sed -i -e "s/%FQDN%/`hostname -f`/g" /etc/caddy/Caddyfile
+	;;
 esac
 
 #DEBHELPER#

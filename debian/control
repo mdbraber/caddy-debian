@@ -1,5 +1,5 @@
 Source: caddy
-Maintainer: Miek Gieben <miek@miek.nl>
+Maintainer: Maarten den Braber <m@mdbraber.com> 
 Build-Depends: debhelper (>= 9), ca-certificates, wget, dh-systemd, lsb-release
 
 Package: caddy

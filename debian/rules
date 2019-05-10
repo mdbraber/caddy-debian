@@ -19,9 +19,10 @@ override_dh_auto_clean:
 override_dh_auto_test:
 override_dh_auto_build:
 override_dh_auto_install:
-	mkdir -p debian/caddy/usr/bin debian/caddy/etc/caddy
+	mkdir -p debian/caddy/usr/bin debian/caddy/etc/caddy debian/caddy/etc/ssl/caddy
 	cp caddy debian/caddy/usr/bin
 	cp debian/Caddyfile debian/caddy/etc/caddy/Caddyfile
+	cp debian/Caddyfile.env debian/caddy/etc/caddy/Caddyfile.env
 
 override_dh_gencontrol:
 	dh_gencontrol -- -v$(PACKAGEVERSION)

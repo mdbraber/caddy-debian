@@ -1,3 +1,8 @@
-# Default Caddyfile, see https://caddyserver.com for more information.
-
-localhost:8080
+%FQDN%
+proxy / localhost:$PORT {
+	transparent
+	header_upstream X-Forwarded-Host {host}
+}
+tls {
+        dns httpreq
+}
