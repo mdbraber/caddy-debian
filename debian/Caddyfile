@@ -1,8 +1,12 @@
 %FQDN%
-proxy / localhost:$PORT {
-	transparent
-	header_upstream X-Forwarded-Host {host}
-}
+
 tls {
         dns httpreq
 }
+
+#proxy / localhost:8080 {
+#	transparent
+#	header_upstream X-Forwarded-Host {host}
+#}
+
+
