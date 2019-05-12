@@ -6,3 +6,5 @@ Package: caddy
 Architecture: any
 Description: Caddy HTTP/2 web server
 Depends: adduser
+Priority: optional
+Section: httpd

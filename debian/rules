@@ -1,11 +1,10 @@
 #!/usr/bin/make -f
 
-VERSION := 0.10.10
+VERSION := $(shell dpkg-parsechangelog -S version)
 
 DEB_HOST_ARCH   := $(DEB_TARGET_ARCH)
 DISTRIBUTION    := $(shell lsb_release -sr)
-PACKAGEVERSION  := $(VERSION)-0~$(DISTRIBUTION)0
-BINARY          := caddy # Expect compiled binary in our local directory.
+PACKAGEVERSION  := $(VERSION)
 
 %:
 	dh_clean
