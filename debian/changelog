@@ -1,3 +1,9 @@
+caddy (0.1-3) stable; urgency=medium
+
+  * Update executable path 
+
+ -- Maarten den Braber <m@mdbraber.com>  Mon, 13 May 2019 16:27:13 +0200
+
 caddy (0.1-2) stable; urgency=medium
 
   * Updated Caddyfile configuration to not include proxy by default* 
