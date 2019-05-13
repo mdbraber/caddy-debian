@@ -9,6 +9,8 @@ case "$1" in
                     --quiet --force-badname --group www-data
         fi
 
+	chown -Rf www-data.www-data /etc/ssl/caddy
+
 	sed -i -e "s/%FQDN%/`hostname -f`/g" /etc/caddy/Caddyfile
 	;;
 esac
