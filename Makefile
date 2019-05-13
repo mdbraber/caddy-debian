@@ -3,6 +3,7 @@
 .PHONY: debian
 debian:
 	dpkg-buildpackage -us -uc -b --target-arch amd64
+	dh_clean
 
 .PHONY: cp
 cp:
